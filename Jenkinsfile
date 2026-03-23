@@ -3,7 +3,7 @@ pipeline {
  
  
     tools {
-      gradle 'Gradle'
+      gradle 'gradle'
       jdk 'JDK'
       }
       
@@ -26,7 +26,7 @@ pipeline {
           stage('Run Application')
          {
          steps{
-         sh 'gradle display'
+         sh 'gradle run'
          }}
 }
  post {
